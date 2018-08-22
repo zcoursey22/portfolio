@@ -1,0 +1,37 @@
+.Navbar {
+  flex-basis: 15%;
+  border-right: 4px solid #7bad8b;
+  background: #222;
+  width: 70vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+
+.Navbar > ul {
+  border-right: 6px solid #598B69;
+  height: 100vh;
+}
+
+.Navbar > ul > img {
+  width: 100%;
+  border-bottom: 1.5px solid white;
+  margin-bottom: 20px;
+}
+
+.Navbar > ul > li {
+  list-style: none;
+}
+
+.Navbar > ul > li > a {
+  text-align: center;
+  color: white;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.Navbar > ul > li> a:hover {
+  color: #7bad8b;
+}

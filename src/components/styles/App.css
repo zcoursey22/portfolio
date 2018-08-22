@@ -1,3 +1,13 @@
+.app {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100vh;
+}
+
+.mainContent {
+  flex-basis: 85%;
+}
+
 header > * {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -17,7 +27,7 @@ h2 {
 }
 
 
-div.main {
+.mainText {
   margin: 0 auto;
   margin-top: 16px;
   padding: 8px;
