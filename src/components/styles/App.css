@@ -5,7 +5,7 @@
 }
 
 .mainContent {
-  flex-basis: 85%;
+  flex-basis: 83%;
 }
 
 header > * {
@@ -34,6 +34,6 @@ h2 {
   width: 70vw;
   color: #111;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 19px;
   text-align: center;
 }
