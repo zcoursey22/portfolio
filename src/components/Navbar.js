@@ -6,7 +6,7 @@ class Navbar extends Component {
     return (
       <div className="Navbar">
         <ul>
-          <img alt="Headshot of me" src="https://avatars2.githubusercontent.com/u/29624831?s=460&v=4" />
+          <img alt="Headshot of me" src="images/headshot2.jpg" />
           <li><a href="#">HOME</a></li>
           <li><a href="#">ABOUT</a></li>
           <li><a href="#">PROJECTS</a></li>
