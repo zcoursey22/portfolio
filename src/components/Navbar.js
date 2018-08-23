@@ -16,7 +16,7 @@ class Navbar extends Component {
             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/zach-coursey/"><img alt="LinkedIn icon, links to my LinkedIn account" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_linked_in-512.png" /></a>
             <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/zcoursey22"><img alt="Twitter icon, links to my Twitter account" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_twitter-512.png" /></a>
           </div>
-          <div className="resume"><a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1bN-ro6O90_Ito-uQaKaU5sO-4Jot6eNE">RESUME</a></div>
+          <div className="resume"><a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1bN-ro6O90_Ito-uQaKaU5sO-4Jot6eNE">-RESUME-</a></div>
           <p>&copy; COPYRIGHT 2018</p>
         </ul>
       </div>

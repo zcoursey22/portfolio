@@ -13,7 +13,17 @@ class App extends Component {
             <h2>FULLSTACK WEB DEVELOPER</h2>
           </header>
           <div className="mainText">
-            <p>Welcome to my portfolio!</p>
+            <p>
+              Welcome to my portfolio!
+            </p>
+            <p>
+              I'm a software engieer focused on building clean, modern UI for everyone to enjoy.
+              Have a look around and if you like what you see, let's work together!
+            </p>
+            <p>
+              I'm currently looking for new oppurtunities and would love to hear from you.
+              Feel free to get in contact.
+            </p>
           </div>
         </div>
       </div>

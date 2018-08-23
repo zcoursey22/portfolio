@@ -30,11 +30,14 @@ h2 {
 
 .mainText {
   margin: 0 auto;
-  margin-top: 16px;
-  padding: 8px;
+  margin-top: 35px;
   width: 70vw;
+}
+
+.mainText > p {
+  padding: 8px;
   color: #111;
   font-family: 'Roboto', sans-serif;
-  font-size: 19px;
+  font-size: 20px;
   text-align: center;
 }
