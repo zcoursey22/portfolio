@@ -1,7 +1,7 @@
 .Navbar {
   flex-basis: 17%;
   border-right: 4px solid #7bad8b;
-  background: #222;
+  background: linear-gradient(#333, #333, #222);
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   letter-spacing: 3px;
@@ -11,12 +11,14 @@
 .Navbar > ul {
   border-right: 6px solid #598B69;
   height: 100vh;
+  position: relative;
 }
 
 .Navbar > ul > img {
   width: 100%;
   border-bottom: 1.5px solid white;
   margin-bottom: 20px;
+  filter: contrast(1.1);
 }
 
 .Navbar > ul > li {
@@ -34,4 +36,32 @@
 
 .Navbar > ul > li> a:hover {
   color: #7bad8b;
+}
+
+.Navbar > ul > div {
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 15px;
+}
+
+.Navbar > ul > div > a {
+  margin: 0 0.5vw;
+}
+
+.Navbar > ul > div > a > img {
+  width: 35px;
+}
+
+.Navbar > ul > p {
+  position: absolute;
+  bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 10px;
+  letter-spacing: 1px;
+  width: 100%;
+  text-align: center;
 }
