@@ -16,8 +16,9 @@
 
 .Navbar > ul > img {
   width: 100%;
-  border-bottom: 1.5px solid white;
-  margin-bottom: 20px;
+  border-bottom: 2px solid white;
+  margin-bottom: 25px;
+  /* margin-bottom: 5px; */
   filter: contrast(1.1);
 }
 
@@ -26,19 +27,22 @@
 }
 
 .Navbar > ul > li > a {
+  /* text-align: left; */
   text-align: center;
-  font-size: 21px;
+  font-size: 20px;
   color: white;
   display: block;
   padding: 10px 0;
+  /* padding-left: 10px; */
   text-decoration: none;
+  transition: color 0.2s;
 }
 
 .Navbar > ul > li> a:hover {
   color: #7bad8b;
 }
 
-.Navbar > ul > div {
+.socialMedia {
   width: 100%;
   position: absolute;
   bottom: 40px;
@@ -47,12 +51,39 @@
   padding: 5px 15px;
 }
 
-.Navbar > ul > div > a {
+.socialMedia > a {
   margin: 0 0.5vw;
 }
 
-.Navbar > ul > div > a > img {
+.socialMedia > a > img {
   width: 35px;
+}
+
+.resume {
+  position: absolute;
+  width: 100%;
+  bottom: 145px;
+  background: linear-gradient(to right, #487a58, #598b69 40%);
+  border-top: 3.5px solid #7bad8b;
+  border-right: 5px solid #598b69;
+  border-bottom: 3.5px solid #7bad8b;
+}
+
+.resume > a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 12px 0;
+  padding-left: 8px;
+  transition: 0.2s;
+}
+
+.resume > a:hover {
+  color: #eaeaea;
 }
 
 .Navbar > ul > p {
