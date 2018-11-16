@@ -1,0 +1,13 @@
+.Home {
+  margin: 0 auto;
+  margin-top: 35px;
+  width: 70vw;
+}
+
+.Home > p {
+  padding: 8px;
+  color: #111;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}

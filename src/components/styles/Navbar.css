@@ -48,7 +48,7 @@
   bottom: 40px;
   display: flex;
   justify-content: center;
-  padding: 5px 15px;
+  padding: 5px 0;
 }
 
 .socialMedia > a {
@@ -57,6 +57,11 @@
 
 .socialMedia > a > img {
   width: 35px;
+  transition: 0.2s;
+}
+
+.socialMedia > a > img:hover {
+  filter: brightness(0.85);
 }
 
 .resume {
@@ -64,9 +69,9 @@
   width: 100%;
   bottom: 145px;
   background: linear-gradient(to right, #487a58, #598b69 40%);
-  border-top: 3.5px solid #7bad8b;
-  border-right: 5px solid #598b69;
-  border-bottom: 3.5px solid #7bad8b;
+  border-top: 0.2rem solid #7bad8b;
+  border-right: 0.3rem solid #598b69;
+  border-bottom: 0.2rem solid #7bad8b;
 }
 
 .resume > a {
@@ -75,7 +80,7 @@
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
-  letter-spacing: 5px;
+  letter-spacing: 0.3rem;
   text-align: center;
   padding: 12px 0;
   padding-left: 8px;

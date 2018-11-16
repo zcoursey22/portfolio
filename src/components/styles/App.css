@@ -26,18 +26,3 @@ h2 {
   font-size: 40px;
   font-weight: 400;
 }
-
-
-.mainText {
-  margin: 0 auto;
-  margin-top: 35px;
-  width: 70vw;
-}
-
-.mainText > p {
-  padding: 8px;
-  color: #111;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  text-align: center;
-}
