@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import './styles/Navbar.css';
 
 class Navbar extends Component {
@@ -7,10 +8,10 @@ class Navbar extends Component {
       <div className="Navbar">
         <ul>
           <img alt="Headshot of me" src="images/headshot2.jpg" />
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><NavLink to="/">HOME</NavLink></li>
+          <li><NavLink to="/about">ABOUT</NavLink></li>
+          <li><NavLink to="/projects">PROJECTS</NavLink></li>
+          <li><NavLink to="/contact">CONTACT</NavLink></li>
           <div className="socialMedia">
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/zcoursey22"><img alt="Github icon, links to my Github account" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/github_social_media_logo-512.png" /></a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/zach-coursey/"><img alt="LinkedIn icon, links to my LinkedIn account" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_linked_in-512.png" /></a>
