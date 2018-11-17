@@ -18,6 +18,10 @@ class Contact extends Component {
   render() {
     return (
       <div className="Contact">
+        <p>
+          I'm currently looking for new oppurtunities and would love to hear from you.
+          Feel free to get in contact.
+        </p>
         <button id="message-me" className={this.state.visible ? 'fade-out' : 'fade-in'} onClick={this.toggleForm.bind(this)}>MESSAGE ME</button>
         <div id="form" className={this.state.visible ? 'open-form' : 'close-form'}>
           <form>
