@@ -1,7 +1,8 @@
 .Projects {
   margin: 0 auto;
   margin-top: 35px;
-  width: 70vw;
+  width: 100%;
+  padding-bottom: 3rem;
 }
 
 .Projects > p {
@@ -10,4 +11,10 @@
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   text-align: center;
+}
+
+#projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

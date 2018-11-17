@@ -1,0 +1,59 @@
+.Project {
+  border: 2px solid #bbb;
+  border-radius: 5px;
+  background: #eaeaea;
+  margin: 15px;
+  flex-basis: 30rem;
+  overflow: hidden;
+  transition: 0.2s;
+  box-shadow: 3px 3px 5px 1px rgba(30, 30, 30, 0.5);
+}
+
+.Project > #image {
+  height: 15rem;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid #bbb;
+  cursor: pointer;
+}
+
+.Project > #info {
+  position: relative;
+  padding: 5px;
+}
+
+.Project > #info > h2 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  color: #222;
+  padding: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.Project > #info > h2:hover {
+  color: #555;
+}
+
+.Project > #info > p {
+  font-family: 'Roboto';
+  color: #222;
+  padding: 5px;
+}
+
+.Project > #info > a > img {
+  width: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  padding: 5px;
+  transition: 0.2s;
+  filter: invert(0.1);
+}
+
+.Project > #info > a > img:hover {
+  filter: invert(0.25);
+  /* transform: scale(1.1); */
+}

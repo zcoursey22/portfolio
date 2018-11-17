@@ -6,6 +6,9 @@
   font-weight: 400;
   letter-spacing: 3px;
   font-size: 18px;
+  position: fixed;
+  left: 0;
+  width: 15rem;
 }
 
 .Navbar > ul {
