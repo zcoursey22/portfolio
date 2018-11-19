@@ -4,8 +4,8 @@ import './styles/Project.css';
 
 /* TODO:
   - display techs
+  - display live link
   - add button to close opened project
-  - fix size change stutter
   - better shadows/borders
 */
 
