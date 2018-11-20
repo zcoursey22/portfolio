@@ -50,7 +50,7 @@ button#message-me:hover {
   border-right: none;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  box-shadow: 10px 4px 4px 3px rgba(30, 30, 30, 0.4);
+  box-shadow: 3px 3px 4px 1px rgba(30, 30, 30, 0.4);
   transition: right 0.5s ease-out;
 }
 
@@ -123,7 +123,7 @@ button#message-me:hover {
   top: -16px;
   left: -16px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.2s ease;
 }
 
 #form > form > img:hover {

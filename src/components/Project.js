@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import './styles/Project.css';
 
 
-/* TODO:
-  - add button to close opened project
-*/
-
-
 class Project extends Component {
   constructor(props) {
     super(props);
@@ -14,11 +9,18 @@ class Project extends Component {
       open: false
     };
     this.handleOpenClick = this.handleOpenClick.bind(this);
+    this.handleCloseClick = this.handleCloseClick.bind(this);
   }
 
   handleOpenClick() {
     this.setState({
       open: true
+    });
+  }
+
+  handleCloseClick() {
+    this.setState({
+      open: false
     });
   }
 
@@ -30,17 +32,23 @@ class Project extends Component {
       height: this.state.open ? '30rem' : '15rem'
     }
 
-    const style = {
+    const projectStyle = {
       flexBasis: this.state.open ? '57rem' : '30rem',
+      transform: this.state.open ? 'none' : ''
+    }
+
+    const closeButtonStyle = {
+      visibility: this.state.open ? 'visible' : 'hidden',
+      clickEvents: this.state.open ? '' : 'none',
     }
 
     return (
-      <div className="Project" style={style}>
+      <div className="Project" style={projectStyle}>
         <div id="image" style={imageStyle} onClick={this.handleOpenClick}></div>
         <div id="info">
           <h2 onClick={this.handleOpenClick}>{project.name}</h2>
           <p>{project.desc}</p>
-          <a id="githubLink" href={project.github}><img src="../images/github-logo.png"></img></a>
+          <a id="githubLink"  target="_blank" rel="noopener noreferrer" href={project.github}><img src="../images/github-logo.png"></img></a>
           <a id="liveLink" style={{ display: project.link ? 'auto' : 'none' }} href={project.link} target="_blank" rel="noopener noreferrer">See demo</a>
         </div>
         {/*<ul id="techList">
@@ -50,6 +58,7 @@ class Project extends Component {
             })
           }
         </ul>*/}
+        <img id="closeProjectButton" style={closeButtonStyle} onClick={this.handleCloseClick} src="../images/x.png"></img>
       </div>
     );
   }
