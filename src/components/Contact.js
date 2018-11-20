@@ -18,9 +18,9 @@ class Contact extends Component {
   render() {
     return (
       <div className="Contact">
+        <div id="bannerImage"></div>
         <p>
-          I'm currently looking for new oppurtunities and would love to hear from you.
-          Feel free to get in contact.
+          I'm currently living in Gainesville, FL but I'm always open to new and exciting oppurtunities wherever they may lead so don't hesitate to reach out! Chances are I would love to hear from you.
         </p>
         <button id="message-me" className={this.state.visible ? 'fade-out' : 'fade-in'} onClick={this.toggleForm.bind(this)}>MESSAGE ME</button>
         <div id="form" className={this.state.visible ? 'open-form' : 'close-form'}>
