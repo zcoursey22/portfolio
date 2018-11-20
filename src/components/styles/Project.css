@@ -1,12 +1,15 @@
 .Project {
-  border: 2px solid #bbb;
+  border: 2px solid #222;
   border-radius: 5px;
-  background: #eaeaea;
+  background: linear-gradient(#eaeaea 85%, #ddd);
   margin: 15px;
+  padding-bottom: 5px;
   flex-basis: 30rem;
   overflow: hidden;
   transition: 0.2s;
-  box-shadow: 3px 3px 5px 1px rgba(30, 30, 30, 0.5);
+  box-shadow: 3px 3px 4px 1px rgba(30, 30, 30, 0.4);
+  display: flex;
+  flex-direction: column;
 }
 
 .Project > #image {
@@ -14,7 +17,7 @@
   width: 100%;
   background-size: cover;
   background-position: center;
-  border-bottom: 2px solid #bbb;
+  border-bottom: 2px solid #222;
   cursor: pointer;
 }
 
@@ -40,9 +43,10 @@
   font-family: 'Roboto';
   color: #222;
   padding: 5px;
+  padding-bottom: 15px;
 }
 
-.Project > #info > a > img {
+.Project > #info > #githubLink > img {
   width: 60px;
   position: absolute;
   top: 0;
@@ -53,7 +57,55 @@
   filter: invert(0.1);
 }
 
-.Project > #info > a > img:hover {
+.Project > #info > #githubLink > img:hover {
   filter: invert(0.25);
   /* transform: scale(1.1); */
 }
+
+.Project > #info > #liveLink {
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  color: #598B69;
+  padding: 5px;
+  transition: 0.2s ease;
+  text-decoration: none;
+}
+
+.Project > #info > #liveLink:hover {
+  color: #7bad8b;
+  text-decoration: underline;
+}
+
+#techList {
+  list-style: none;
+  display: flex;
+  margin-top: auto;
+}
+
+#techList > .tech {
+  height: 100%;
+  flex-grow: 1;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  border-top: 2px solid #222;
+  border-left: 2px solid #222;
+  padding: 3px 7px;
+  text-align: center;
+}
+
+#techList > .tech:first-of-type {
+  border-left: none;
+}
+
+#techList > .HTML { background: #f51; }
+#techList > .CSS { background: #0dc; }
+#techList > .JavaScript { background: #fd0 }
+#techList > .React { background: #0df; }
+#techList > .Node { background: #7b4; }
+#techList > .PostgreSQL { background: #47b; }
+#techList > .Express { background: #999; }
+#techList > .AWS { background: #f90; }
+#techList > .Docker { background: #09e; }
+#techList > .Nginx { background: #283; }

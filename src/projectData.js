@@ -27,18 +27,15 @@ module.exports = [
     ]
   },
   {
-    name: 'Igniter',
-    desc: 'Updates section of a crowdfunding website',
-    image: '../images/igniter.png',
-    link: '',
-    github: 'https://github.com/MADZ-labs/updates',
+    name: 'Etch A Sketch',
+    desc: 'The classic toy with a color mode and resizing',
+    image: '../images/etch-a-sketch.png',
+    link: 'https://zcoursey22.github.io/etch-a-sketch/',
+    github: 'https://github.com/zcoursey22/etch-a-sketch',
     tech: [
-      'React',
-      'Node',
-      'Express',
-      'PostgreSQL',
-      'AWS',
-      'Docker'
+      'HTML',
+      'CSS',
+      'JavaScript'
     ]
   },
   {
@@ -58,15 +55,18 @@ module.exports = [
     ]
   },
   {
-    name: 'Etch A Sketch',
-    desc: 'The classic toy with a color mode and resizing',
-    image: '../images/etch-a-sketch.png',
-    link: 'https://zcoursey22.github.io/etch-a-sketch/',
-    github: 'https://github.com/zcoursey22/etch-a-sketch',
+    name: 'Igniter',
+    desc: 'Updates section of a crowdfunding website',
+    image: '../images/igniter.png',
+    link: '',
+    github: 'https://github.com/MADZ-labs/updates',
     tech: [
-      'HTML',
-      'CSS',
-      'JavaScript'
+      'React',
+      'Node',
+      'Express',
+      'PostgreSQL',
+      'AWS',
+      'Docker'
     ]
   }
 ];

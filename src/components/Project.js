@@ -3,10 +3,7 @@ import './styles/Project.css';
 
 
 /* TODO:
-  - display techs
-  - display live link
   - add button to close opened project
-  - better shadows/borders
 */
 
 
@@ -43,8 +40,16 @@ class Project extends Component {
         <div id="info">
           <h2 onClick={this.handleOpenClick}>{project.name}</h2>
           <p>{project.desc}</p>
-          <a href={project.github}><img src="../images/github-logo.png"></img></a>
+          <a id="githubLink" href={project.github}><img src="../images/github-logo.png"></img></a>
+          <a id="liveLink" style={{ display: project.link ? 'auto' : 'none' }} href={project.link} target="_blank" rel="noopener noreferrer">See demo</a>
         </div>
+        {/*<ul id="techList">
+          {
+            project.tech.map((tech, index) => {
+              return <li key={`tech${index}`} className={`tech ${tech}`}>{tech}</li>
+            })
+          }
+        </ul>*/}
       </div>
     );
   }
