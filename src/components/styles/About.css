@@ -1,12 +1,27 @@
 .About {
-  margin: 0 auto;
-  margin-top: 35px;
-  width: 70vw;
+  padding-top: 5px;
+}
+
+.About > #bannerImage {
+  background: url("https://www.smartertravel.com/uploads/2017/06/shutterstock_531181849-1400x500.jpg");
+  width: 100%;
+  height: 35vh;
+  min-height: 10rem;
+  max-height: 20rem;
+  background-position: center;
+  background-size: cover;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+  z-index: -1;
+  margin-bottom: 15px;
 }
 
 .About > p {
   padding: 8px;
-  color: #111;
+  margin: 0 auto;
+  min-width: 775px;
+  width: 80%;
+  color: #222;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   text-align: center;

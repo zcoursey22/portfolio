@@ -29,7 +29,6 @@ class Contact extends Component {
   render() {
     return (
       <div className="Contact">
-        <div id="bannerImage"></div>
         <p>
           I'm always open to new and exciting oppurtunities wherever they may lead so don't hesitate to reach out! Chances are I would love to hear from you.
         </p>

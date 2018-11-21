@@ -1,13 +1,11 @@
 .Projects {
-  margin: 0 auto;
-  margin-top: 35px;
-  width: 100%;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 5px;
 }
 
 .Projects > p {
   padding: 8px;
-  color: #111;
+  color: #222;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   text-align: center;

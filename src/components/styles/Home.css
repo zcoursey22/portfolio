@@ -1,12 +1,9 @@
-.Home {
-  margin: 0 auto;
-  margin-top: 35px;
-  width: 70vw;
-}
-
 .Home > p {
+  margin: 0 auto;
+  min-width: 775px;
+  width: 80%;
   padding: 8px;
-  color: #111;
+  color: #222;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   text-align: center;

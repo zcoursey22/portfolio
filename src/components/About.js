@@ -5,6 +5,7 @@ class About extends Component {
   render() {
     return (
       <div className="About">
+        <div id="bannerImage"></div>
         <div id="currentLocation">
           <img src="https://www.freeiconspng.com/uploads/red-location-icon-1.png"></img>
           <h3>Gainesville, FL</h3>
