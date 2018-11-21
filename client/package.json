@@ -1,0 +1,18 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "author": "Zach Coursey",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "mailgun-js": "^0.22.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5"
+  },
+  "proxy": "http://localhost:5000/",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './styles/Contact.css';
+import axios from 'axios';
 
 class Contact extends Component {
   constructor(props) {
@@ -26,6 +27,16 @@ class Contact extends Component {
     });
   }
 
+  submitForm() {
+    axios.post('/api/postTest', {
+      name: 'Zach',
+      email: 'zcoursey22',
+      message: 'This is a test message'
+    })
+      .then(res => console.log(res))
+      .catch(err => console.log(err));
+  }
+
   render() {
     return (
       <div className="Contact">
@@ -39,7 +50,7 @@ class Contact extends Component {
             <input></input>
             <label>MESSAGE</label>
             <textarea></textarea>
-            <input type="submit" value="SUBMIT"></input>
+            <input type="submit" value="SUBMIT" onClick={this.submitForm.bind(this)}></input>
           </form>
         </div>
       </div>
