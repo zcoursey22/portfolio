@@ -6,7 +6,10 @@ class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      visible: false
+      visible: false,
+      name: '',
+      email: '',
+      message: ''
     }
   }
 
@@ -29,9 +32,9 @@ class Contact extends Component {
 
   submitForm() {
     axios.post('/api/postTest', {
-      name: 'Zach',
-      email: 'zcoursey22',
-      message: 'This is a test message'
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message
     })
       .then(res => console.log(res))
       .catch(err => console.log(err));
@@ -45,12 +48,12 @@ class Contact extends Component {
           <form>
             <img src="images/x.png" onClick={this.toggleForm.bind(this)}/>
             <label>NAME</label>
-            <input id="nameInput"></input>
+            <input id="nameInput" onChange={(e) => this.setState({ name: e.target.value })}></input>
             <label>EMAIL</label>
-            <input></input>
+            <input onChange={(e) => this.setState({ email: e.target.value })}></input>
             <label>MESSAGE</label>
-            <textarea></textarea>
-            <input type="submit" value="SUBMIT" onClick={this.submitForm.bind(this)}></input>
+            <textarea onChange={(e) => this.setState({ message: e.target.value })}></textarea>
+            <button type="button" onClick={this.submitForm.bind(this)}>SUBMIT</button>
           </form>
         </div>
       </div>

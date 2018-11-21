@@ -84,7 +84,14 @@ button#message-me:hover {
   border-radius: 3px;
 }
 
-#form > form > input:last-of-type {
+#form > form > button {
+  padding: 10px;
+  border-style: inset;
+  border: 2px solid #bbb;
+  width: 100%;
+  color: #222;
+  display: block;
+  border-radius: 3px;
   margin: 0 auto;
   border-radius: 3px;
   width: 140px;
@@ -98,12 +105,12 @@ button#message-me:hover {
   font-weight: 700;
 }
 
-#form > form > input:last-of-type:active {
+#form > form > button:active {
   /* transform: translateY(2px); */
   transform: scale(0.95);
 }
 
-#form > form > input:last-of-type:hover {
+#form > form > button:hover {
   background: #ddd;
 }
 
