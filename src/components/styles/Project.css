@@ -23,7 +23,6 @@
   background-size: cover;
   background-position: center;
   border-bottom: 2px solid #222;
-  cursor: pointer;
   border-radius: 3px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -39,12 +38,7 @@
   font-weight: 500;
   color: #222;
   padding: 5px;
-  cursor: pointer;
   display: inline-block;
-}
-
-.Project > #info > h2:hover {
-  color: #555;
 }
 
 .Project > #info > p {
@@ -66,8 +60,7 @@
 }
 
 .Project > #info > #githubLink > img:hover {
-  filter: invert(0.25);
-  /* transform: scale(1.1); */
+  filter: invert(0.3);
 }
 
 .Project > #info > #liveLink {

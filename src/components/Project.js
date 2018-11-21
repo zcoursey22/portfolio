@@ -44,7 +44,8 @@ class Project extends Component {
 
     const imageStyle = {
       backgroundImage: `url(${project.image})`,
-      height: this.state.open ? '30rem' : '15rem'
+      height: this.state.open ? '30rem' : '15rem',
+      cursor: this.state.open ? 'auto' : 'pointer'
     }
 
     const projectStyle = {
@@ -61,7 +62,7 @@ class Project extends Component {
       <div className="Project" ref={node => this.node = node} style={projectStyle}>
         <div id="image" style={imageStyle} onClick={this.handleOpenClick}></div>
         <div id="info">
-          <h2 onClick={this.handleOpenClick}>{project.name}</h2>
+          <h2>{project.name}</h2>
           <p>{project.desc}</p>
           <a id="githubLink"  target="_blank" rel="noopener noreferrer" href={project.github}><img src="../images/github-logo.png"></img></a>
           <a id="liveLink" style={{ display: project.link ? 'auto' : 'none' }} href={project.link} target="_blank" rel="noopener noreferrer">See demo</a>
