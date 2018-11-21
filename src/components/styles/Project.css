@@ -34,7 +34,7 @@
 }
 
 .Project > #info > h2 {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #222;
   padding: 5px;
@@ -71,7 +71,7 @@
 
 .Project > #info > #liveLink {
   font-size: 16px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #598B69;
   padding: 5px;
@@ -93,7 +93,7 @@
 #techList > .tech {
   height: 100%;
   flex-grow: 1;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 14px;
   border-top: 2px solid #222;

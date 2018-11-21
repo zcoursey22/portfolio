@@ -12,18 +12,24 @@ class Contact extends Component {
   toggleForm() {
     this.setState({
       visible: !this.state.visible,
+    }, () => {
+      if (this.state.visible) {
+        setTimeout(() => {
+          document.querySelector("#nameInput").focus();
+        }, 300);
+      } else {
+        setTimeout(() => {
+          document.querySelectorAll("input").forEach(input => input.value = '');
+          document.querySelector("textarea").value = '';
+        }, 200);
+      }
     });
   }
 
   render() {
     return (
       <div className="Contact">
-        <div id="bannerImage">
-          <div id="currentLocation">
-            <img src="https://www.freeiconspng.com/uploads/red-location-icon-1.png"></img>
-            <h3>Gainesville, FL</h3>
-          </div>
-        </div>
+        <div id="bannerImage"></div>
         <p>
           I'm always open to new and exciting oppurtunities wherever they may lead so don't hesitate to reach out! Chances are I would love to hear from you.
         </p>
@@ -32,7 +38,7 @@ class Contact extends Component {
           <form>
             <img src="images/x.png" onClick={this.toggleForm.bind(this)}/>
             <label>NAME</label>
-            <input></input>
+            <input id="nameInput"></input>
             <label>EMAIL</label>
             <input></input>
             <label>MESSAGE</label>
