@@ -11,6 +11,18 @@
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   text-align: center;
+  transition: 0.15s ease;
+}
+
+.Contact > p > span {
+  cursor: pointer;
+  color: #598B69;
+  font-size: 16px;
+}
+
+.Contact > p > span:hover {
+  color: #7bad8b;
+  text-decoration: underline;
 }
 
 button#message-me {
@@ -138,6 +150,7 @@ button#message-me:hover {
   transform: scale(1.1);
 }
 
+
 .open-form {
   right: 0 !important;
 }
@@ -145,6 +158,7 @@ button#message-me:hover {
 .close-form {
   right: -35vw !important;
 }
+
 
 .fade-in {
   opacity: 1;
@@ -155,4 +169,20 @@ button#message-me:hover {
 .fade-out {
   opacity: 0;
   pointer-events: none;
+}
+
+
+.show-slid-up {
+  transform: translateY(-60px);
+  opacity: 1;
+}
+
+.show-and-slide-down {
+  opacity: 1;
+  transform: translateY(15px);
+}
+
+.hide {
+  opacity: 0;
+  transform: translateY(15px);
 }
