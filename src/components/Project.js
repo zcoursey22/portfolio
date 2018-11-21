@@ -8,8 +8,23 @@ class Project extends Component {
     this.state = {
       open: false
     };
+
+    this.handleClick = this.handleClick.bind(this);
     this.handleOpenClick = this.handleOpenClick.bind(this);
     this.handleCloseClick = this.handleCloseClick.bind(this);
+
+    document.addEventListener('mousedown', this.handleClick, false);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleClick, false);
+  }
+
+  handleClick(e) {
+    if(this.node.contains(e.target)) {
+      return;
+    }
+    setTimeout(this.handleCloseClick, 100);
   }
 
   handleOpenClick() {
@@ -43,7 +58,7 @@ class Project extends Component {
     }
 
     return (
-      <div className="Project" style={projectStyle}>
+      <div className="Project" ref={node => this.node = node} style={projectStyle}>
         <div id="image" style={imageStyle} onClick={this.handleOpenClick}></div>
         <div id="info">
           <h2 onClick={this.handleOpenClick}>{project.name}</h2>
