@@ -23,14 +23,15 @@ class Contact extends Component {
         }, 300);
       } else {
         setTimeout(() => {
-          document.querySelectorAll("input").forEach(input => input.value = '');
-          document.querySelector("textarea").value = '';
+          this.clearForm();
         }, 200);
       }
     });
   }
 
   submitForm() {
+    this.clearForm();
+    this.toggleForm();
     axios.post('/api/postTest', {
       name: this.state.name,
       email: this.state.email,
@@ -38,6 +39,16 @@ class Contact extends Component {
     })
       .then(res => console.log(res))
       .catch(err => console.log(err));
+  }
+
+  clearForm() {
+    this.setState({
+      name: '',
+      email: '',
+      message: ''
+    });
+    document.querySelectorAll("input").forEach(input => input.value = '');
+    document.querySelector("textarea").value = '';
   }
 
   render() {
