@@ -36,6 +36,7 @@ class Contact extends Component {
   }
 
   submitForm() {
+    // Validate form
     this.setState({
       submitted: true
     }, () => {

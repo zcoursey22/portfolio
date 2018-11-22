@@ -16,12 +16,13 @@
 
 .Contact > p > span {
   cursor: pointer;
-  color: #598B69;
+  color: #598B69; /* #999 */
   font-size: 16px;
+  transition: 0.1s ease;
 }
 
 .Contact > p > span:hover {
-  color: #7bad8b;
+  color: #7bad8b; /* #aaa */
   text-decoration: underline;
 }
 
