@@ -75,6 +75,7 @@ button#message-me:hover {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   background: linear-gradient(#333, #333, #222);
+  position: relative;
 }
 
 #form > form > label {
@@ -90,11 +91,17 @@ button#message-me:hover {
   padding: 10px;
   font-size: 18px;
   border-style: inset;
-  border: 2px solid #bbb;
+  border: 2px solid #111;
   width: 100%;
-  color: #222;
+  background: #555;
+  color: white;
   display: block;
   border-radius: 3px;
+  transition: 0.2s ease;
+}
+
+#form > form > input::placeholder,textarea::placeholder {
+  color: #b66;
 }
 
 #form > form > button {
@@ -133,9 +140,10 @@ button#message-me:hover {
   min-width: 100%;
   min-height: 48px;
   max-height: 180px;
+  resize: none;
 }
 
-#form > form > img {
+#form > form > #xButton {
   width: 35px;
   filter: contrast(0.9);
   border-radius: 50%;
@@ -147,7 +155,7 @@ button#message-me:hover {
   transition: 0.2s ease;
 }
 
-#form > form > img:hover {
+#form > form > #xButton:hover {
   transform: scale(1.1);
 }
 
