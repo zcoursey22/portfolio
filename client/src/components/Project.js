@@ -60,11 +60,11 @@ class Project extends Component {
 
     return (
       <div className="Project" ref={node => this.node = node} style={projectStyle}>
-        <div id="image" style={imageStyle} onClick={this.handleOpenClick}></div>
+        <div id="image" alt={`Screenshot of ${project.name}`} style={imageStyle} onClick={this.handleOpenClick}></div>
         <div id="info">
           <h2>{project.name}</h2>
           <p>{project.desc}</p>
-          <a id="githubLink"  target="_blank" rel="noopener noreferrer" href={project.github}><img src="../images/github-logo.png"></img></a>
+          <a id="githubLink"  target="_blank" rel="noopener noreferrer" href={project.github}><img alt={`Github logo linking to my repo for ${project.name}`} src="../images/github-logo.png"></img></a>
           <a id="liveLink" style={{ display: project.link ? 'auto' : 'none' }} href={project.link} target="_blank" rel="noopener noreferrer">See demo</a>
         </div>
         {/*<ul id="techList">
@@ -74,7 +74,7 @@ class Project extends Component {
             })
           }
         </ul>*/}
-        <img id="closeProjectButton" style={closeButtonStyle} onClick={this.handleCloseClick} src="../images/x.png"></img>
+        <img id="closeProjectButton" style={closeButtonStyle} onClick={this.handleCloseClick} alt="Button to close the project" src="../images/x.png"></img>
       </div>
     );
   }

@@ -154,7 +154,7 @@ class Contact extends Component {
         <p style={{ display: this.state.buttonVisible ? 'none' : 'block' }} className={getParagraphStyle()}><span onClick={() => this.setState({ buttonVisible: true })} id="sendAnotherMessage">Want to send another message?</span></p>
         <div id="form" className={this.state.visible ? 'open-form' : 'close-form'}>
           <form>
-            <img id="xButton" src="images/x.png" onClick={this.toggleForm.bind(this)}/>
+            <img id="xButton" alt="Button to close form" src="images/x.png" onClick={this.toggleForm.bind(this)}/>
             <label>NAME</label>
             <input id="nameInput" onClick={(e) => this.resetStyle(e)} onChange={(e) => this.setState({ name: e.target.value })}></input>
             <label>EMAIL</label>
