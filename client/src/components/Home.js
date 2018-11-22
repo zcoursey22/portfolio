@@ -22,16 +22,18 @@ class Home extends Component {
         <div id="navSection">
           <div>
             <img src="images/x.png"></img>
-            <h4>Me</h4>
+            <h4>About Me</h4>
+            <p>You can find me exploring state and national parks in my spare time</p>
           </div>
           <div>
             <img src="images/x.png"></img>
-            <h4>My work</h4>
-            <p>I use React to build dynamic user interfaces</p>
+            <h4>My Work</h4>
+            <p>I use React to build dynamic user interfaces for data-driven web apps</p>
           </div>
           <div>
             <img src="images/x.png"></img>
-            <h4>Get social</h4>
+            <h4>Get Social</h4>
+            <p>Send me a message if you're interested in working together on a project</p>
           </div>
         </div>
       </div>
