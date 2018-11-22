@@ -15,7 +15,7 @@
   border-right: 6px solid #598B69;
   height: 100vh;
   position: relative;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .Navbar > ul > img {
@@ -37,7 +37,7 @@
   color: white;
   display: block;
   padding: 10px 0;
-  margin: 25px 0;
+  margin: 18px 0;
   /* padding-left: 10px; */
   text-decoration: none;
   transition: color 0.2s;
@@ -62,7 +62,7 @@
   display: block;
   color: white;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.3rem;
   text-align: center;

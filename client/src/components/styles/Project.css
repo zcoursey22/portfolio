@@ -1,5 +1,5 @@
 .Project {
-  border: 2px solid #222;
+  border: 2px solid #333;
   border-radius: 5px;
   background: linear-gradient(#eaeaea 85%, #ddd);
   margin: 30px 15px;
@@ -22,7 +22,7 @@
   width: 100%;
   background-size: cover;
   background-position: center;
-  border-bottom: 2px solid #222;
+  border-bottom: 2px solid #333;
   border-radius: 3px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -36,16 +36,19 @@
 .Project > #info > h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  color: #222;
+  color: #333;
   padding: 5px;
   display: inline-block;
 }
 
 .Project > #info > p {
-  font-family: 'Roboto';
-  color: #222;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
   padding: 5px;
   padding-bottom: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 17px;
 }
 
 .Project > #info > #githubLink > img {
@@ -90,8 +93,8 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 14px;
-  border-top: 2px solid #222;
-  border-left: 2px solid #222;
+  border-top: 2px solid #333;
+  border-left: 2px solid #333;
   padding: 3px 7px;
   text-align: center;
 }

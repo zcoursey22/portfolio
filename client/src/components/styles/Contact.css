@@ -7,7 +7,7 @@
   min-width: 775px;
   width: 80%;
   padding: 8px;
-  color: #222;
+  color: #333;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   text-align: center;
@@ -28,8 +28,8 @@
 
 button#message-me {
   border-style: inset;
-  border: 2px solid #222;
-  color: #222;
+  border: 2px solid #333;
+  color: #333;
   margin: 15px auto;
   padding: 15px;
   display: block;
@@ -109,7 +109,7 @@ button#message-me:hover {
   border-style: inset;
   border: 2px solid #bbb;
   width: 100%;
-  color: #222;
+  color: #333;
   display: block;
   border-radius: 3px;
   margin: 0 auto;

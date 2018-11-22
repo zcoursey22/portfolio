@@ -4,3 +4,7 @@
   box-sizing: border-box;
   outline-color: #598B69;
 }
+
+*::selection {
+  background: rgba(100,173,130,0.4);
+}
