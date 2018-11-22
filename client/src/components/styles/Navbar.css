@@ -15,6 +15,7 @@
   border-right: 6px solid #598B69;
   height: 100vh;
   position: relative;
+  padding-top: 80px;
 }
 
 .Navbar > ul > img {
@@ -36,19 +37,20 @@
   color: white;
   display: block;
   padding: 10px 0;
+  margin: 25px 0;
   /* padding-left: 10px; */
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .Navbar > ul > li> a:hover {
-  color: #7bad8b;
+  color: #bbb;
 }
 
 .socialMedia {
   width: 100%;
   position: absolute;
-  bottom: 55px;
+  bottom: 75px;
   display: flex;
   justify-content: center;
   padding: 5px 0;
@@ -70,7 +72,7 @@
 .resume {
   position: absolute;
   width: 100%;
-  bottom: 145px;
+  bottom: 175px;
   background: linear-gradient(to right, #487a58, #598b69 40%);
   border-top: 0.2rem solid #7bad8b;
   border-right: 0.3rem solid #598b69;
@@ -96,7 +98,7 @@
 
 .Navbar > ul > p {
   position: absolute;
-  bottom: 30px;
+  bottom: 50px;
   font-family: 'Roboto', sans-serif;
   color: white;
   font-size: 10px;

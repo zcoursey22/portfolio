@@ -5,13 +5,13 @@ import './styles/Navbar.css';
 class Navbar extends Component {
   render() {
     const activePageStyle = {
-      color: '#bbb'
+      color: '#7bad8b'
     };
 
     return (
       <div className="Navbar">
         <ul>
-          <img alt="Headshot of me" src="images/headshot2.jpg" />
+          {/*<img alt="Headshot of me" src="images/headshot2.jpg" />*/}
           <li><NavLink exact to="/" activeStyle={activePageStyle}>HOME</NavLink></li>
           <li><NavLink to="/about" activeStyle={activePageStyle}>ABOUT</NavLink></li>
           <li><NavLink to="/projects" activeStyle={activePageStyle}>PROJECTS</NavLink></li>
