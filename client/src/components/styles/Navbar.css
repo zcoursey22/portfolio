@@ -47,32 +47,11 @@
   color: #bbb;
 }
 
-.socialMedia {
-  width: 100%;
-  position: absolute;
-  bottom: 75px;
-  display: flex;
-  justify-content: center;
-  padding: 5px 0;
-}
-
-.socialMedia > a {
-  margin: 0 0.5vw;
-}
-
-.socialMedia > a > img {
-  width: 35px;
-  transition: 0.2s;
-}
-
-.socialMedia > a > img:hover {
-  filter: brightness(0.85);
-}
 
 .resume {
   position: absolute;
   width: 100%;
-  bottom: 175px;
+  bottom: 195px;
   background: linear-gradient(to right, #487a58, #598b69 40%);
   border-top: 0.2rem solid #7bad8b;
   border-right: 0.3rem solid #598b69;
@@ -96,13 +75,45 @@
   color: #eaeaea;
 }
 
+
+.socialMedia {
+  width: 100%;
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.socialMedia > a {
+  margin: 0 0.5vw;
+}
+
+.socialMedia > a > img {
+  width: 35px;
+  transition: 0.2s;
+}
+
+.socialMedia > a > img:hover {
+  filter: brightness(0.75);
+}
+
+
 .Navbar > ul > p {
   position: absolute;
-  bottom: 50px;
-  font-family: 'Roboto', sans-serif;
+  bottom: 39px;
+  font-family: 'Montserrat', sans-serif;
   color: white;
   font-size: 10px;
   letter-spacing: 1px;
   width: 100%;
   text-align: center;
+  color: #bbb;
+}
+
+#developedByMe {
+  color: white;
+  font-size: 11px;
+  bottom: 60px;
+  letter-spacing: 0.2px;
 }
