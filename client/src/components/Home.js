@@ -21,17 +21,17 @@ class Home extends Component {
 
         <div id="navSection">
           <div>
-            <img src="images/x.png"></img>
+            <img src="https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-512.png"></img>
             <h4>About Me</h4>
             <p>You can find me exploring state and national parks in my spare time</p>
           </div>
           <div>
-            <img src="images/x.png"></img>
+            <img src="https://cdn1.iconfinder.com/data/icons/seo-markiting/66/2-512.png"></img>
             <h4>My Work</h4>
             <p>I use React to build dynamic user interfaces for data-driven web apps</p>
           </div>
           <div>
-            <img src="images/x.png"></img>
+            <img src="https://img.icons8.com/metro/1600/paper-plane.png"></img>
             <h4>Get Social</h4>
             <p>Send me a message if you're interested in working together on a project</p>
           </div>
