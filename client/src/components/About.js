@@ -10,6 +10,10 @@ class About extends Component {
           <img alt="location pin" src="images/locationPin.png"></img>
           <h3>Gainesville, FL</h3>
         </div>
+        
+        <div id="sendMessageButton">
+          <div id="sendMessageButtonInnerBorder"><img src="images/chat1.png"></img></div>
+        </div>
       </div>
     );
   }

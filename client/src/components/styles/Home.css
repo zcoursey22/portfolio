@@ -1,13 +1,15 @@
+.Home {
+  margin: 0 123px;
+}
+
 .Home > #topSection {
-  margin: 65px 0;
+  margin-bottom: 65px;
   margin-top: 110px;
   padding: 0;
 }
 
 .Home > #topSection > h3 {
   margin: 10px auto;
-  min-width: 775px;
-  width: 80%;
   padding: 3px;
   color: #333;
   font-family: 'Roboto', sans-serif;
@@ -18,7 +20,6 @@
 
 .Home > #topSection > p {
   margin: 0 auto;
-  width: 840px;
   padding: 12px;
   color: #333;
   font-family: 'Roboto', sans-serif;
@@ -29,7 +30,7 @@
 }
 
 .Home > #navSection {
-  margin: 45px auto;
+  margin-bottom: 45px;
   margin-top: 110px;
   display: flex;
   justify-content: space-evenly;
@@ -37,12 +38,11 @@
 
 .Home > #navSection > div {
   width: 25vw;
-  min-width: 250px;
   text-align: center;
 }
 
 .Home > #navSection > div > img {
-  width: 85%;
+  width: 75%;
   max-width: 250px;
   cursor: pointer;
   filter: contrast(0.7);

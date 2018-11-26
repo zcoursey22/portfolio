@@ -15,6 +15,10 @@ class Projects extends Component {
         <div id="projectsContainer">
           {allProjects}
         </div>
+
+        <div id="sendMessageButton">
+          <div id="sendMessageButtonInnerBorder"><img src="images/chat1.png"></img></div>
+        </div>
       </div>
     );
   }

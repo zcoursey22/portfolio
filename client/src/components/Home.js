@@ -15,10 +15,6 @@ class Home extends Component {
           </p>
         </div>
 
-        <div id="socialSection">
-
-        </div>
-
         <div id="navSection">
           <div>
             <img src="https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-512.png"></img>
@@ -35,6 +31,10 @@ class Home extends Component {
             <h4>Get Social</h4>
             <p>Send me a message if you're interested in working together on a project</p>
           </div>
+        </div>
+
+        <div id="sendMessageButton">
+          <div id="sendMessageButtonInnerBorder"><img src="images/chat1.png"></img></div>
         </div>
       </div>
     );

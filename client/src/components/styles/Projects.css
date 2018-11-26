@@ -1,14 +1,7 @@
 .Projects {
   padding-bottom: 2rem;
   padding-top: 5px;
-}
-
-.Projects > p {
-  padding: 8px;
-  color: #222;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  text-align: center;
+  margin: 0 100px;
 }
 
 #projectsContainer {

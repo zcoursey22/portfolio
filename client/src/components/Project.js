@@ -44,12 +44,12 @@ class Project extends Component {
 
     const imageStyle = {
       backgroundImage: `url(${project.image})`,
-      height: this.state.open ? '30rem' : '15rem',
+      height: this.state.open ? '29rem' : '14.5rem',
       cursor: this.state.open ? 'auto' : 'pointer'
     }
 
     const projectStyle = {
-      flexBasis: this.state.open ? '57rem' : '30rem',
+      flexBasis: this.state.open ? '57rem' : '29rem',
       transform: this.state.open ? 'none' : ''
     }
 
