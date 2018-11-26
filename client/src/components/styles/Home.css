@@ -46,6 +46,11 @@
   max-width: 250px;
   cursor: pointer;
   filter: contrast(0.7);
+  transition: 0.2s ease;
+}
+
+.Home > #navSection > div > img:hover {
+  filter: contrast(0.25);
 }
 
 .Home > #navSection > div > h4 {
