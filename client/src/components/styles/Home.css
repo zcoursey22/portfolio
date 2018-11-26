@@ -45,7 +45,7 @@
   width: 85%;
   max-width: 250px;
   cursor: pointer;
-  filter: contrast(0.75);
+  filter: contrast(0.7);
 }
 
 .Home > #navSection > div > h4 {
