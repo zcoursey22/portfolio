@@ -72,3 +72,39 @@ header > h2 {
   padding: 6px;
   filter: invert(1);
 }
+
+#messageSentNotification {
+  position: fixed;
+  top: -150px;
+  right: 0;
+  background: rgba(99,169,125,0.9);
+  border-radius: 3px;
+  box-shadow: 3px 3px 4px 1px rgba(30,30,30,0.4);
+  display: flex;
+  align-items: center;
+  margin: 25px;
+  padding: 12px;
+  transition: 0.7s;
+}
+
+.notificationActive {
+  top: 0 !important;
+}
+
+.notificationInactive {
+  top: -150px !important;
+}
+
+#messageSentNotification > img {
+  width: 25px;
+  margin: 12px;
+  filter: invert(1);
+}
+
+#messageSentNotification > p {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 12px;
+}

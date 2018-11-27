@@ -9,6 +9,7 @@ class PopoutForm extends Component {
       visible: false,
       submitted: false,
       buttonVisible: true,
+      notificationActive: false,
       name: '',
       email: '',
       message: ''
@@ -86,11 +87,19 @@ class PopoutForm extends Component {
     if (formValid) this.submitForm();
   }
 
-  // changed submitted to false instead of true to get rid of bug from Contact Page
   submitForm() {
     this.setState({
-      submitted: false
+      submitted: false,
     }, () => {
+      setTimeout(() => {
+        this.setState({
+          notificationActive: true,
+        }, () => {
+          setTimeout(() => {
+            this.setState({ notificationActive: false });
+          }, 2500);
+        })
+      }, 300);
       axios.post('/api/postTest', {
         name: this.state.name,
         email: this.state.email,
@@ -137,6 +146,11 @@ class PopoutForm extends Component {
   render() {
     return (
       <div className="PopoutForm">
+        <div id="messageSentNotification" className={this.state.notificationActive ? 'notificationActive' : 'notificationInactive'}>
+          <img src="images/checkmark.png"></img>
+          <p>Thanks for the message!</p>
+        </div>
+
         <div id="sendMessageButton" className={this.state.buttonVisible ? 'fade-in' : 'fade-out'} onClick={this.toggleForm.bind(this)}>
           <div id="sendMessageButtonInnerBorder"><img src="images/chat1.png"></img></div>
         </div>
