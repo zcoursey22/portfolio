@@ -86,9 +86,10 @@ class PopoutForm extends Component {
     if (formValid) this.submitForm();
   }
 
+  // changed submitted to false instead of true to get rid of bug from Contact Page
   submitForm() {
     this.setState({
-      submitted: true
+      submitted: false
     }, () => {
       axios.post('/api/postTest', {
         name: this.state.name,
