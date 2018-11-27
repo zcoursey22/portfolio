@@ -134,6 +134,7 @@ class Contact extends Component {
     document.querySelector("textarea").placeholder = '';
   }
 
+
   render() {
     const getParagraphStyle = () => {
       if (this.state.submitted && this.state.buttonVisible) {

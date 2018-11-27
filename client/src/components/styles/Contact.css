@@ -55,7 +55,7 @@ button#message-me:hover {
 }
 
 #form {
-  position: absolute;
+  position: fixed;
   right: 0;
   margin: 0 auto;
   top: 180px;
