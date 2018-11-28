@@ -148,6 +148,7 @@ class Contact extends Component {
 
     return (
       <div className="Contact">
+        <div style={{ backgroundImage: 'url("images/floridaBanner.jpg")' }} id="bannerImage"></div>
         <button id="message-me" className={this.state.buttonVisible ? 'fade-in' : 'fade-out'} onClick={this.toggleForm.bind(this)}>MESSAGE ME</button>
         <p className={getParagraphStyle()}>
           Thanks for your inquiry! I'll get back to you as soon as possible.
