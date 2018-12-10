@@ -12,7 +12,7 @@ class About extends Component {
 
         <div id="currentLocation">
           <img alt="location pin" src="images/locationPin.png"></img>
-          <h3>Gainesville, FL</h3>
+          <h3>Jacksonville, FL</h3>
         </div>
 
         <div id="textContainer">
